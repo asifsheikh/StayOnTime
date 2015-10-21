@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    tools:context=".MainChoice"
+    android:weightSum="1"
+   >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/imageView3"
+        android:layout_weight="0.14"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="You are a:"
+        android:id="@+id/textView"
+        android:layout_weight="0.14"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/abc_text_size_display_3_material" />
+
+    <RadioButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Professor"
+        android:id="@+id/professor"
+        android:layout_weight="0.14"
+        android:checked="false"
+        android:textSize="@dimen/abc_text_size_display_3_material" />
+
+    <RadioButton
+        android:layout_width="387dp"
+        android:layout_height="wrap_content"
+        android:text="Student"
+        android:id="@+id/student"
+        android:layout_weight="0.14"
+        android:checked="false"
+        android:textSize="@dimen/abc_text_size_display_3_material" />
+
+</LinearLayout>

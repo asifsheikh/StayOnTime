@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+       >
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Provide Slots"
+            android:id="@+id/provide_slots"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:alpha="1" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="view booked slot"
+            android:id="@+id/view_slot"
+            android:alpha="1"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/provide_slots"
+            android:layout_alignStart="@+id/provide_slots" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/logo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="View Messages"
+            android:id="@+id/view_message"
+            android:allowUndo="false"
+            android:alpha="1"
+            android:layout_below="@+id/view_slot"
+            android:layout_alignLeft="@+id/view_slot"
+            android:layout_alignStart="@+id/view_slot" />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Video Chat"
+            android:id="@+id/video_p"
+            android:layout_below="@+id/view_message"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</LinearLayout>
