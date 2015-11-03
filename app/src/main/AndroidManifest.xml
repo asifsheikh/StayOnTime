@@ -4,11 +4,11 @@
 <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/stayontime"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".SplashScreen"
+            android:name=".Activity.SplashActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -16,6 +16,14 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.HelpActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".Activity.AboutActivity"
+            android:label="@string/app_name">
         </activity>
         <activity
             android:name=".Login"
