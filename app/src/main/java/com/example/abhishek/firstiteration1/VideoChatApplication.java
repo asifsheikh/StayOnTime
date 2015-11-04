@@ -8,12 +8,12 @@ import com.quickblox.users.model.QBUser;
 public class VideoChatApplication extends Application {
 
     public static final int FIRST_USER_ID = 65421;
-    public static final String FIRST_USER_LOGIN = "videoChatUser1";
-    public static final String FIRST_USER_PASSWORD = "videoChatUser1pass";
+    public static final String FIRST_USER_LOGIN = "abithakur";
+    public static final String FIRST_USER_PASSWORD = "";
     //
     public static final int SECOND_USER_ID = 65422;
-    public static final String SECOND_USER_LOGIN = "videoChatUser2";
-    public static final String SECOND_USER_PASSWORD = "videoChatUser2pass";
+    public static final String SECOND_USER_LOGIN = "Prof";
+    public static final String SECOND_USER_PASSWORD = "";
 
     private QBUser currentUser;
 

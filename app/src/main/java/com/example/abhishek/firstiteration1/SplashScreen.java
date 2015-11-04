@@ -20,7 +20,7 @@ public class SplashScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash_screen);
+        setContentView(R.layout.activity_splashscreen);
         QBSettings.getInstance().fastConfigInit("28635", "JmTSGKN2pf9Uh4O", "GHJZQ6MYwkXF864");
        // System.out.println("hey");
         Thread timer =new Thread(){
