@@ -14,6 +14,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 
+import com.example.abhishek.firstiteration1.Activity.AboutActivity;
+import com.example.abhishek.firstiteration1.Activity.HelpActivity;
 import com.example.abhishek.firstiteration1.Activity.MapsActivity;
 
 import java.io.BufferedReader;
@@ -69,6 +71,20 @@ String date="";
         maps.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Intent maps = new Intent(getApplicationContext(), MapsActivity.class);
+                startActivity(maps);
+            }
+        });
+
+        help.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent maps = new Intent(getApplicationContext(), HelpActivity.class);
+                startActivity(maps);
+            }
+        });
+
+        about.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent maps = new Intent(getApplicationContext(), AboutActivity.class);
                 startActivity(maps);
             }
         });
