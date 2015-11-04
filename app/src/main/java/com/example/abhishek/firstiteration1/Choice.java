@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.abhishek.firstiteration1.Activity.MapsActivity;
+
 /**
  * Created by Abhishek on 9/21/2015.
  */
@@ -18,11 +20,17 @@ public class Choice extends Activity {
        stu_name = b.getString("Prof_name");
         setContentView(R.layout.choice);
         final Button appointment=(Button) findViewById(R.id.appointments);
-
+        final Button maps_button = (Button) findViewById(R.id.Maps);
         final Button message=(Button) findViewById(R.id.message_student);
         final Button video=(Button) findViewById(R.id.video);
          b1 = new Bundle();
         b1.putString("Prof_name",stu_name);
+        maps_button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent maps = new Intent(getApplicationContext(), MapsActivity.class);
+                startActivity(maps);
+            }
+        });
         appointment.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 final Intent appointment = new Intent("com.example.abhishek.firstiteration1.APPOINTMENT");

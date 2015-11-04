@@ -12,6 +12,5 @@ public class Prof_slot extends Activity {
         setContentView(R.layout.prof_slot);
 
 
-
     }
 }

@@ -1,42 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="16sp"
+    android:paddingLeft="8sp"
+    android:paddingRight="8sp"
+    android:paddingBottom="16sp"
     >
 
-    <ImageView
+    <!--<ImageView
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:id="@+id/imageView5"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/logo" />
+        android:src="@drawable/logo" />-->
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Make Appointments"
         android:id="@+id/appointments"
         android:layout_gravity="center_horizontal"
-        android:alpha="1" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+         />
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Message"
         android:id="@+id/message_student"
-        android:alpha="1" />
+        android:layout_below="@+id/appointments"
+        android:layout_centerHorizontal="true"
+        />
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Maps"
-        android:id="@+id/button3"
-        android:alpha="1" />
+        android:id="@+id/Maps"
+        android:layout_below="@+id/message_student"
+        android:layout_centerHorizontal="true"
+        />
 
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Video Chat"
         android:id="@+id/video"
-        android:alpha="1" />
-</LinearLayout>
+        android:layout_below="@+id/Maps"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Help"
+        android:id="@+id/help"
+        android:layout_below="@+id/video"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:id="@+id/about"
+        android:layout_below="@+id/help"
+        android:layout_centerHorizontal="true"
+        />
+
+
+
+</RelativeLayout>

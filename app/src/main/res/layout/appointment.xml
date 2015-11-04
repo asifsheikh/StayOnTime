@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingTop="32dp"
+    android:paddingLeft="8sp"
+    android:paddingRight="8sp">
 
-    <ImageView
+    <!--<ImageView
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:id="@+id/imageView4"
         android:src="@drawable/logo"
         android:layout_alignParentTop="true"
         android:layout_alignRight="@+id/textView2"
-        android:layout_alignEnd="@+id/textView2" />
+        android:layout_alignEnd="@+id/textView2" />-->
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -77,10 +80,10 @@
             android:layout_height="wrap_content"
             android:text="Refresh slots"
             android:id="@+id/refresh"
+            android:alpha="1"
             android:layout_below="@+id/select_slots_student"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:alpha="1" />
+            android:layout_alignRight="@+id/branch"
+            android:layout_alignEnd="@+id/branch" />
 
 
     </RelativeLayout>

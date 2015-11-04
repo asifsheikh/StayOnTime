@@ -14,6 +14,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 
+import com.example.abhishek.firstiteration1.Activity.MapsActivity;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -50,6 +52,9 @@ String date="";
         final Button view_message=(Button) findViewById(R.id.view_message);
         final Button view_slot=(Button) findViewById(R.id.view_slot);
         final Button video=(Button) findViewById(R.id.video_p);
+        final Button maps = (Button) findViewById(R.id.maps_p);
+        final Button help = (Button) findViewById(R.id.help_p);
+        final Button about = (Button) findViewById(R.id.about_p);
         Bundle b = getIntent().getExtras();
          prof_name = b.getString("Prof_name");
         Log.d("proof", prof_name);
@@ -57,6 +62,14 @@ String date="";
             public void onClick(View v) {
                 showDialog(DATE_DIALOG_ID);
 
+            }
+        });
+
+
+        maps.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent maps = new Intent(getApplicationContext(), MapsActivity.class);
+                startActivity(maps);
             }
         });
 

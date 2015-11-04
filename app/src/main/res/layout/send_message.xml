@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:paddingLeft="8dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingRight="8dp">
 
-    <ImageView
+   <!-- <ImageView
         android:layout_width="match_parent"
         android:layout_height="140dp"
         android:id="@+id/imageView6"
         android:layout_gravity="center_horizontal"
-        android:src="@drawable/logo" />
+        android:src="@drawable/logo" />-->
 
     <TextView
         android:layout_width="wrap_content"
@@ -17,12 +20,17 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Branch"
         android:id="@+id/branch_m"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"/>
 
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/branch1" />
+        android:id="@+id/branch1"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/professor_m"
+        android:layout_toEndOf="@+id/professor_m" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -30,24 +38,38 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Professor"
         android:id="@+id/professor_m"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp" />
 
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/professor1" />
+        android:id="@+id/professor1"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_alignLeft="@+id/branch1"
+        android:layout_alignStart="@+id/branch1" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/editText"
         android:layout_weight="0.08"
-        android:text="Enter Message" />
+        android:text="Enter Message"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="200dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Send Message"
         android:id="@+id/send1_message"
-        android:layout_gravity="right" />
-</LinearLayout>
+        android:layout_gravity="right"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp" />
+</RelativeLayout>
